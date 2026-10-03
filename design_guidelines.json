@@ -1,0 +1,111 @@
+{
+  "project_type": "landing_page",
+  "theme": "dark",
+  "design_archetype": "ARCHETYPE 4 & 5 FUSION: SWISS HIGH-CONTRAST + LUXURY DARK",
+  "description": "A high-end, Awwwards-style portfolio landing page for Zeitix Labs. Moving away from the 'terminal AI slop' aesthetic into a highly credible, premium digital agency feel. Features intense kinetic typography, bento grids, and smooth scrolling.",
+  "global_strategy": {
+    "emotion": "Premium, structural, forward-thinking, and deeply human.",
+    "spacing_philosophy": "Luxurious negative space. Sections must be separated by py-24 to py-32. Cards must have p-8 to p-12 inner padding.",
+    "alignment": "Optical alignment over strict geometry. Generous use of asymmetry.",
+    "motion_philosophy": "Premium purposeful motion. Smooth scrolling is mandatory. Elements reveal as if stepping into a physical gallery."
+  },
+  "dependencies_to_install": [
+    "yarn add framer-motion",
+    "yarn add @studio-freight/react-lenis",
+    "yarn add react-fast-marquee",
+    "yarn add @phosphor-icons/react",
+    "yarn add sonner",
+    "yarn add lucide-react"
+  ],
+  "typography": {
+    "headings": {
+      "font_family": "Cabinet Grotesk, Outfit, sans-serif",
+      "style": "tracking-tighter leading-none font-medium to font-bold",
+      "usage": "Massive typography for hero and section headers. Never default to generic sans."
+    },
+    "body": {
+      "font_family": "IBM Plex Sans, Manrope, sans-serif",
+      "style": "leading-relaxed text-gray-400 font-light",
+      "usage": "Descriptions, labels, form inputs."
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl lg:text-[6rem]",
+      "h2": "text-3xl sm:text-4xl md:text-5xl",
+      "h3": "text-2xl sm:text-3xl",
+      "body": "text-base md:text-lg",
+      "label": "text-xs tracking-[0.2em] uppercase"
+    }
+  },
+  "colors": {
+    "background": "#050505",
+    "surface": "#0C0C0C",
+    "surface_hover": "#141414",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A3A3A3",
+    "text_muted": "#525252",
+    "accent_primary": "#FFFFFF",
+    "accent_glow": "rgba(255, 255, 255, 0.05)"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "Used selectively for sticky header. bg-black/60 backdrop-blur-xl border-b border-white/10.",
+    "borders": "1px solid rgba(255, 255, 255, 0.1). Used to define bento cards and section dividers.",
+    "shadows": "Ambient glows instead of drop shadows. e.g., shadow-[0_0_40px_rgba(255,255,255,0.03)].",
+    "textures": "Subtle noise overlay on the background if possible, otherwise stark clean dark voids."
+  },
+  "layouts_and_grids": {
+    "hero": "Full viewport height (min-h-screen). Massive kinetic typography staggered in via framer-motion. Background features a dark abstract 3D architectural element with parallax effect.",
+    "bento_portfolio": {
+      "container": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "items": [
+        "Zeitix Play: col-span-1 md:col-span-8 row-span-2 (Hero block)",
+        "Zeitix CRM: col-span-1 md:col-span-4 row-span-1 (Square block)",
+        "Zeitix Tools: col-span-1 md:col-span-4 row-span-1 (Square block)",
+        "Zeitix Grow: col-span-1 md:col-span-6 row-span-1 (Wide block)",
+        "Zeitix Build: col-span-1 md:col-span-6 row-span-1 (Wide block)"
+      ]
+    },
+    "roadmap": "List format with custom Framer Motion progress bars filling up from 0% on scroll into view.",
+    "contact": "2-column grid. Left: Direct links (Email, Phone, WhatsApp) with huge typography. Right: Minimalist Shadcn form with floating labels or very stark borders."
+  },
+  "components_and_motion": {
+    "marquee": "react-fast-marquee. 'Editorial Ribbon' style. Slow drift, font-serif or clean mono, tracking wide, massive gaps between items (gap-32). Text: 'Zeitix Labs ✦ Evolving with Time ✦ Pune, India'",
+    "scroll": "@studio-freight/react-lenis is MANDATORY for wrapping the main app to provide premium smooth scrolling.",
+    "reveal_animations": "Framer Motion line-by-line text reveals. Use overflow-hidden on a wrapper div, and translate-y from 100% to 0% for child elements.",
+    "hover_states": "Bento cards lift slightly (-translate-y-1) and their borders brighten (border-white/30). Images inside cards slightly scale up (scale-105) on group-hover."
+  },
+  "image_urls": {
+    "hero_bg": {
+      "url": "https://images.unsplash.com/photo-1709626011485-6fe000ea2dbc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMDNkJTIwYXJjaGl0ZWN0dXJhbCUyMGdlb21ldHJ5JTIwZGFya3xlbnwwfHx8fDE3OTEwNjEwMjJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract black and blue architectural geometry for subtle background immersion."
+    },
+    "zeitix_play": {
+      "url": "https://images.unsplash.com/photo-1645109870868-e1b6f909e444?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHw0fHxtb2JpbGUlMjBnYW1pbmclMjBwaG9uZSUyMGNsb3NlJTIwdXB8ZW58MHx8fHwxNzkxMDYxMDIyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Person engaged in mobile gaming."
+    },
+    "zeitix_crm": {
+      "url": "https://images.unsplash.com/photo-1759142235060-3191ee596c81?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwzfHxzYWxvbiUyMGludGVyaW9yJTIwcHJlbWl1bXxlbnwwfHx8fDE3OTEwNjEwMjJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Premium salon storefront at night, representing CRM target."
+    },
+    "zeitix_build": {
+      "url": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBvZmZpY2UlMjBzb2Z0d2FyZSUyMGFnZW5jeSUyMHBlb3BsZXxlbnwwfHx8fDE3OTEwNjEwMjJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Collaborative modern office space for custom software build."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Do not use default generic fonts like Inter for headings. Apply Cabinet Grotesk or Outfit from Google Fonts.",
+    "Implement @studio-freight/react-lenis at the root layout level for smooth scrolling. This is critical for the Awwwards feel.",
+    "The Hero section must use Framer Motion for a kinetic staggered line-by-line reveal of the text: 'We build products that evolve with time.'",
+    "Construct the 5 verticals (Play, CRM, Tools, Grow, Build) using a strict CSS Grid bento layout as specified in layouts_and_grids.",
+    "Images within bento cards must be constrained (max-h-[300px] or cover object-fit) and darkened via overlay (bg-black/50) to keep text legible.",
+    "Build the Contact form using Shadcn UI form primitives but strip away heavy borders, using a minimalist aesthetic with 1px border-white/10.",
+    "All interactive elements (buttons, inputs) MUST have data-testid attributes for testing.",
+    "Use sonner for toast notifications on form submission.",
+    "Include direct WhatsApp, Phone, and Email links using placeholder data (hello@zeitixlabs.com, etc) in the contact section."
+  ],
+  "accessibility": {
+    "contrast": "Ensure text over images uses text-shadow or gradient overlays. Text colors must meet 4.5:1 ratio.",
+    "focus_states": "Use high-contrast focus rings (focus:ring-2 focus:ring-white).",
+    "reduced_motion": "Respect prefers-reduced-motion queries."
+  }
+}
