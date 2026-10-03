@@ -20,8 +20,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-2.5">
             <span className="font-mono-z text-[11px] tracking-[0.2em] uppercase text-neutral-600">Connect</span>
-            <a href="mailto:hello@zeitixlabs.com" className="text-sm text-neutral-400 hover:text-white transition-colors" data-testid="footer-link-email">hello@zeitixlabs.com</a>
-            <a href="https://wa.me/919800000000" target="_blank" rel="noreferrer" className="text-sm text-neutral-400 hover:text-white transition-colors" data-testid="footer-link-whatsapp">WhatsApp</a>
+            <a href="mailto:ceo@zeitixlabs.com" className="text-sm text-neutral-400 hover:text-white transition-colors" data-testid="footer-link-email">ceo@zeitixlabs.com</a>
           </div>
         </div>
       </div>

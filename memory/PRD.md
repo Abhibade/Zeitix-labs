@@ -36,7 +36,7 @@
 - GET /api/inquiries — list, newest first
 
 ## Backlog / Next
-- P1: Replace placeholder contact details with real email/phone/WhatsApp
+- P1: ~~Replace placeholder email~~ Done (Jun 2026): real email ceo@zeitixlabs.com in contact + footer; fake phone/WhatsApp links removed until real numbers provided
 - P1: Admin view or email notification (Resend) for incoming inquiries
 - P2: Blog section ("From the Lab"), Team page
 - P2: Rate limiting / honeypot on inquiry form

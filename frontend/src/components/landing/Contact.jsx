@@ -2,14 +2,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import { toast } from "sonner";
-import { Mail, Phone, MessageCircle, ArrowUpRight, Loader2 } from "lucide-react";
+import { Mail, ArrowUpRight, Loader2 } from "lucide-react";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const directLinks = [
-  { icon: Mail, label: "Email us", value: "hello@zeitixlabs.com", href: "mailto:hello@zeitixlabs.com", testId: "contact-email-link" },
-  { icon: Phone, label: "Call us", value: "+91 98XXX XXXXX", href: "tel:+919800000000", testId: "contact-phone-link" },
-  { icon: MessageCircle, label: "WhatsApp", value: "Chat with the team", href: "https://wa.me/919800000000", testId: "contact-whatsapp-link" },
+  { icon: Mail, label: "Email us", value: "ceo@zeitixlabs.com", href: "mailto:ceo@zeitixlabs.com", testId: "contact-email-link" },
 ];
 
 const interests = ["Games", "CRM & Platforms", "Utility Apps", "Marketing", "Custom Software", "Other"];
